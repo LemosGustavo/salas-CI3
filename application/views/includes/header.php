@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -95,7 +94,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="salas/listSalas" class="nav-link">
+                                    <a href="salas/list_salas" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Salas</p>
                                     </a>

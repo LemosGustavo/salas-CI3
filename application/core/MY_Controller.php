@@ -16,24 +16,7 @@ class MY_Controller extends CI_Controller {
 				redirect($this->uri->uri_string());
 			}
 		}
-		$sesion = $this->session->all_userdata();
-		if (!isset($sesion['usuario'])) {
-			if (isset($this->login_url)) {
-				redirect($this->login_url);
-			} else {
-				redirect('usuarios/auth_login/login?redirect_url=' . urlencode(str_replace(base_url(), '', current_url())));
-			}
-		}
-		$this->usuario = $sesion['usuario']->usuario_id;
-		$this->rol = isset($sesion['rol']) ? $sesion['rol'] : null;
-		if (empty($this->rol)) {
-			$this->rol = $this->usuarios_model->get_rol_activo($this->usuario);
-			if (!empty($this->rol)) {
-				$this->session->set_userdata('rol', $this->rol);
-			} elseif (!$this->sin_rol) {
-				redirect('usuarios/rol/seleccionar?redirect_url=' . urlencode(str_replace(base_url(), '', current_url())));
-			}
-		}
+		
 		$this->nombres_meses = array('01' => 'Enero', '02' => 'Febrero', '03' => 'Marzo', '04' => 'Abril', '05' => 'Mayo', '06' => 'Junio', '07' => 'Julio', '08' => 'Agosto', '09' => 'Setiembre', '10' => 'Octubre', '11' => 'Noviembre', '12' => 'Diciembre');
 		$this->nav_route = 'esc';
 	}

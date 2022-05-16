@@ -1,12 +1,11 @@
 <?php
-
-
 class Salas extends CI_Controller {
     public function index() {
+		lm("Aca");
         $this->loadViews("salas/index");
     }
 
-    public function listSalas() {
+    public function list_salas() {
         $this->loadViews("salas/salas_index");
     }
     

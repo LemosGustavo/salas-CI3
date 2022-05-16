@@ -9,7 +9,7 @@
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="<?= base_url() ?>">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="">Inicio</a></li>
                         <li class="breadcrumb-item active">Salas</li>
                     </ol>
                 </div><!-- /.col -->
@@ -25,7 +25,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                        <a data-remote="false" data-toggle="modal" data-target="#remote_modal_lg" id="agregar_sala" name="agregar_sala" href="<?= base_url()?>/salas/crearSalasModal" class="btn btn-success"><i class="fa fa-plus"></i> Agregar</a>
+                        <a data-remote="false" data-toggle="modal" data-target="#remote_modal_lg" id="agregar_sala" name="agregar_sala" href="salas/crearSalasModal" class="btn btn-success"><i class="fa fa-plus"></i> Agregar</a>
                             <div class="card-tools">
                                 <div class="input-group input-group-sm" style="width: 150px;">
                                     <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
